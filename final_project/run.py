@@ -45,7 +45,7 @@ for txt in list_of_text_file:
 for fruit in fruit_data:
     response = requests.post(URL, json=fruit)
     # check response form URL
-    if response.status_code == 200:
+    if response.status_code == 201:
         print(f"Upload {fruit['name']} Successful")
     else:
         print(f"Unable to Upload {fruit['name']}")
