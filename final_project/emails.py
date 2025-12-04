@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from email.message import EmailMessage
+from email.message import EmailMessage 
 import os 
 import mimetypes
 import smtplib
@@ -44,6 +44,5 @@ def generate_email_without_attach(sender, recipient, subject, body):
 
 def send_email(message):
     """send email"""
-    mail_server = smtplib.SMTP_SLL('localhost')
-    mail_server.send(message)
-    mail_server.quit()
+    mail_server = smtplib.SMTP('localhost')
+    mail_server.send_message(message)
