@@ -21,7 +21,8 @@ def change_format(name):
         it will return format of picture resize to 600x400 and 
         save in new_file_path with .jpeg format"""
     curent_path = os.path.join(old_file_path, name)
-    save_path = os.path.join(new_file_path, name)
+    base, ext = os.path.splitext(name)
+    save_path = os.path.join(new_file_path, base)
     
     try:
         Image.open(curent_path)
@@ -29,8 +30,8 @@ def change_format(name):
         print(f"It not an image (skipping)", name)
         return
     
-    img = Image.open(curent_path)
-    img.resize((600,400)).convert("RGB").save(save_path + ".jpeg" )
+    with Image.open(curent_path) as img:
+        img.resize((600,400)).convert("RGB").save(save_path + ".jpeg" )
     return
 
 if __name__ == "__main__":
