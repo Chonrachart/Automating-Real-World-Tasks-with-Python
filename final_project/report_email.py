@@ -2,8 +2,8 @@
 
 import os 
 import datetime
-from emails import generate_email, send_email
-from reports import generate_report  
+import emails 
+import reports 
 
 
 #set date
