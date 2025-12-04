@@ -8,14 +8,14 @@ picture_path = os.path.join(os.getcwd(), 'picture')
 list_of_picture = os.listdir(picture_path)
 
 # check path and content in directory
-print(f"this is picture path that feedback come form:{picture_path}")
+print(f"this is picture path that picture come form:{picture_path}")
 print(f"this is list of picture:{list_of_picture}")
 
 """ try to upload picture that process by changeImage.py
     to URL
 """
 
-URL = "http://34.82.90.146/feedback/"
+URL = "http://localhost/upload/"
 
 for picture in list_of_picture:
     if picture.endswith(".jpeg"):
@@ -23,7 +23,7 @@ for picture in list_of_picture:
             files = {"file": img}
             response = requests.post(URL, files=files)
             # check response form URL
-            if response.status_code == 200:
+            if response.status_code == 201:
                 print(f"Upload {picture} Successful")
             else:
                 print(f"Unable to Upload {picture}")
