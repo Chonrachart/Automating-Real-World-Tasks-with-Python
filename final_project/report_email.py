@@ -30,15 +30,15 @@ for txt in list_of_text_file:
                             })
     
 # create title of PDF
-title = "Processed Updateon on" + date + "<\br>"
+title = "Processed Updateon on" + date + "<br/>"
 
 # create data of PDF
 data = ""
 for fruit in fruits_data:
-    data += fruit["name"] + "<\br>" + fruit["weight"] + "<\br>"
+    data += "name: " + fruit["name"] + "<br/>" + "weight: " + fruit["weight"] + "<br/>" + "<br/>"
 
 if __name__ == "__main__":
-    reports.generate_report(title, data, save_report_path)
+    reports.generate_reports(title, data, save_report_path)
 
     sender = "automation@example.com"
     replicent = "student@example.com"
