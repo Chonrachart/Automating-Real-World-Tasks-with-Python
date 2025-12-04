@@ -4,7 +4,7 @@ import os
 import requests
 
 # set path
-picture_path = os.path.join(os.getcwd(), 'feedback') 
+picture_path = os.path.join(os.getcwd(), 'picture') 
 list_of_picture = os.listdir(picture_path)
 
 # check path and content in directory
