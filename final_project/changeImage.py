@@ -3,6 +3,10 @@
 from PIL import Image,UnidentifiedImageError
 import os
 
+
+"""open image from file path and change file format to 600x400 in jpeg then save to new file (changeimage.py)
+"""
+
 """set file path"""
 old_file_path = os.path.join(os.getcwd(), 'images')
 new_file_path = os.path.join(os.getcwd(), 'images_jpg')
