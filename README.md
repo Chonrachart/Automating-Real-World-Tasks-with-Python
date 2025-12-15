@@ -14,7 +14,7 @@ Since this process is key to your business's success, you need to make sure that
 1.Run a script on your web server to monitor system health.
 2.Send an email with an alert if the server is ever unhealthy.
 
-scrip explain
+script explain
 
 1.def function generate email with attachment and with out attachment use email.message module and def function send email use SMTP module (email.py)
 
