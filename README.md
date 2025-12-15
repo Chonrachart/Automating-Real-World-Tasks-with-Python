@@ -17,10 +17,17 @@ Since this process is key to your business's success, you need to make sure that
 scrip explain
 
 1.def function generate email with attachment and with out attachment use email.message module and def function send email use SMTP module (email.py)
+
 2.open image from file path and change file format to 600x400 in jpeg then save to new file (changeimage.py)
+
 3.def function generate report pdf use reportlab module (reports.py)
+
 4.to upload picture that process by (changeImage.py) to URL use request module (supplier_image_upload.py)
+
 5.update feedback from user in txt respectively with image name to URL (run.py)  
+
 6.create fruits data and use generate report pdf in reports.py and send it to email use generate email with attachment pdf report use generate email with 
+
   attachment and send it use send email function (report_email.py)
+  
 7.create health check monitor that send the email if condition is met (health_check.py)
