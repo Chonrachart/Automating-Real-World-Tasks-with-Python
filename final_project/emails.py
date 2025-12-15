@@ -5,6 +5,9 @@ import os
 import mimetypes
 import smtplib
 
+"""def function generate email with attachment and with out attachment use email.message module and def function send email use SMTP module
+"""
+
 def generate_email(sender, recipient, subject, body, attachment_path):
     """Create email with an attachement"""
 
