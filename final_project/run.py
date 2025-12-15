@@ -3,6 +3,9 @@
 import os
 import requests
 
+"""update feedback from user in txt respectively with image name to URL
+"""
+
 # set path
 data_path = os.path.join(os.getcwd(), 'feedback') 
 list_of_text_file = os.listdir(data_path)
