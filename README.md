@@ -26,8 +26,6 @@ scrip explain
 
 5.update feedback from user in txt respectively with image name to URL (run.py)  
 
-6.create fruits data and use generate report pdf in reports.py and send it to email use generate email with attachment pdf report use generate email with 
-
-  attachment and send it use send email function (report_email.py)
+6.create fruits data and use generate report pdf in reports.py and send it to email use generate email with attachment pdf report use generate email with attachment and send it use send email function (report_email.py)
   
 7.create health check monitor that send the email if condition is met (health_check.py)
