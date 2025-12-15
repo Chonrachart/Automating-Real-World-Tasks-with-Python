@@ -9,6 +9,11 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 # Text alignment constant
 from reportlab.lib.enums import TA_LEFT
 
+
+"""def function generat report pdf use reportlab module (reprots.py)
+"""
+
+
 def generate_reports(title, data, output_location):
     # set outpur location and load styles sheet 
     report = SimpleDocTemplate(output_location)
