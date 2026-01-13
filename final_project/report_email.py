@@ -8,7 +8,7 @@ import reports
 
 """create fruits data and use generate report pdf in reports.py and send it to email use generate email with attachment pdf report use generate email with 
   attachment and send it use send email function
-""""
+"""
 
 #set date
 date = datetime.date.today().strftime("%B %d, %Y")
